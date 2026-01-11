@@ -11,6 +11,7 @@ import MyEvents from './pages/MyEvents'
 import NotFound from './pages/NotFound'
 import { useAuth } from './contexts/AuthContext'
 
+
 function RequireAuth({ children }){
   const { token } = useAuth()
   if(!token) return <Navigate to="/login" replace />
