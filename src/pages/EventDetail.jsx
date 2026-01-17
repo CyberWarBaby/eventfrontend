@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { useParams, Link, useNavigate } from 'react-router-dom'
 import { fetchEvent, deleteEvent, registerEvent, cancelRegistration } from '../api'
 import { useAuth } from '../contexts/AuthContext'
-
 export default function EventDetail(){
   const { id } = useParams()
   const [ev, setEv] = useState(null)
